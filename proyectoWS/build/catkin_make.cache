@@ -1,2 +1,0 @@
-test_pkg
--DCATKIN_DEVEL_PREFIX=/mnt/c/ubuntu18/ProyectoFundamentos/proyectoWS/devel -DCMAKE_INSTALL_PREFIX=/mnt/c/ubuntu18/ProyectoFundamentos/proyectoWS/install -G Unix Makefiles
