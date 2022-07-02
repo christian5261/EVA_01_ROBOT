@@ -1,0 +1,400 @@
+<?xml version="1.0"?>
+<!-- created with Phobos 1.0.1 "Capricious Choutengan" -->
+  <robot name="R6DOF">
+
+    <link name="base">
+      <visual name="Main_Base">
+        <origin xyz="0 0.00275 0.04322" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_Base.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="VioletLight"/>
+      </visual>
+      <visual name="Main_BotonLED">
+        <origin xyz="-0.01182 -0.04876 0.0236" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_BotonLED.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="GreenLight"/>
+      </visual>
+      <visual name="Main_CRK543AP-H50">
+        <origin xyz="0 -0.00044 0.04208" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CRK543AP-H50.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Orange"/>
+      </visual>
+      <visual name="Main_CaseButtons">
+        <origin xyz="-0.0022 -0.04876 0.02871" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CaseButtons.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="GreenLight"/>
+      </visual>
+      <visual name="Main_ExtraPart1">
+        <origin xyz="0 0.0459 0.039" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_ExtraPart1.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="GreenLight"/>
+      </visual>
+      <visual name="Main_Screen">
+        <origin xyz="0.00144 -0.05835 0.05743" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_Screen.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </visual>
+      <visual name="Main_Socket_5V">
+        <origin xyz="0.00464 -0.05803 0.02372" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_Socket_5V.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="VioletDark"/>
+      </visual>
+      <visual name="Main_Soporte">
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_Soporte.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="VioletLight"/>
+      </visual>
+      <collision name="Main_Base">
+        <origin xyz="0 0.00275 0.04322" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_Base.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+      <collision name="Main_Soporte">
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_Soporte.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+      <inertial name="Main_Base">
+        <origin xyz="0 0.00275 0.04322" rpy="1.5708 0 0"/>
+        <mass value="0.911"/>
+        <inertia ixx="0.001327" ixy="0.0" ixz="0.0" iyy="0.001769" iyz="-0.000010" izz="0.001536"/>
+      </inertial>
+      <inertial name="Main_Soporte">
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <mass value="0.911"/>
+        <inertia ixx="0.001327" ixy="0.0" ixz="0.0" iyy="0.001769" iyz="-0.000010" izz="0.001536"/>
+      </inertial>
+    </link>
+
+    <link name="link1">
+      <visual name="Main_Joint_1">
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_Joint_1.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="GreenLight"/>
+      </visual>
+      <collision name="Main_Joint_1">
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_Joint_1.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+      <inertial name="Main_Joint_1">
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <mass value="0.911"/>
+        <inertia ixx="0.001327" ixy="0.0" ixz="0.0" iyy="0.001769" iyz="-0.000010" izz="0.001536"/>
+      </inertial>
+    </link>
+
+    <link name="link2">
+      <visual name="Main_CSF-8-30-1U_v2">
+        <origin xyz="0 0.146 0.02269" rpy="0 -1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CSF-8-30-1U_v2.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="GreenDark"/>
+      </visual>
+      <visual name="Main_CSF-8-30-1U_v2_1">
+        <origin xyz="-1e-05 0 0.01996" rpy="0 -1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CSF-8-30-1U_v2_1.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="GreenDark"/>
+      </visual>
+      <visual name="Main_CaseJoint2_3">
+        <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CaseJoint2_3.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="VioletLight"/>
+      </visual>
+      <visual name="Main_CaseOutside_1">
+        <origin xyz="0.0018 0.12238 -0.00859" rpy="0 -1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CaseOutside_1.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="GreenLight"/>
+      </visual>
+      <visual name="Main_CaseOutside_2">
+        <origin xyz="0.00263 0.03311 0.05513" rpy="0 -1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CaseOutside_2.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="GreenLight"/>
+      </visual>
+      <visual name="Main_Nema17_Slim">
+        <origin xyz="0.00082 0.10757 0.01994" rpy="0 -1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_Nema17_Slim.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Orange"/>
+      </visual>
+      <visual name="Main_Nema17_StepperMotor">
+        <origin xyz="0.00481 0.05535 0.01494" rpy="0 -1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_Nema17_StepperMotor.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Orange"/>
+      </visual>
+      <collision name="Main_CaseJoint2_3">
+        <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CaseJoint2_3.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+      <inertial name="Main_CaseJoint2_3">
+        <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
+        <mass value="0.911"/>
+        <inertia ixx="0.001327" ixy="0.0" ixz="0.0" iyy="0.001769" iyz="-0.000010" izz="0.001536"/>
+      </inertial>
+    </link>
+
+    <link name="link3">
+      <visual name="Main_CSF-5-30-1U_v2">
+        <origin xyz="0.0214 0.052 0.02015" rpy="0 1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CSF-5-30-1U_v2.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="GreenDark"/>
+      </visual>
+      <visual name="Main_CaseJoint4">
+        <origin xyz="0 0 0" rpy="0 1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CaseJoint4.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="VioletLight"/>
+      </visual>
+      <visual name="Main_CaseOutside_3">
+        <origin xyz="0.0429 0.06027 0.01998" rpy="0 1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CaseOutside_3.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="GreenLight"/>
+      </visual>
+      <visual name="Main_PK513PA-H50S_v2">
+        <origin xyz="0.01629 0.0762 0.02015" rpy="0 1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_PK513PA-H50S_v2.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Orange"/>
+      </visual>
+      <collision name="Main_CaseJoint4">
+        <origin xyz="0 0 0" rpy="0 1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CaseJoint4.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+      <inertial name="Main_CaseJoint4">
+        <origin xyz="0 0 0" rpy="0 1.5708 0"/>
+        <mass value="0.911"/>
+        <inertia ixx="0.001327" ixy="0.0" ixz="0.0" iyy="0.001769" iyz="-0.000010" izz="0.001536"/>
+      </inertial>
+    </link>
+
+    <link name="link4">
+      <visual name="Main_CSF-5-30-1U_v2_1">
+        <origin xyz="0.0026 0 0.127" rpy="0 3.14159 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CSF-5-30-1U_v2_1.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Black"/>
+      </visual>
+      <visual name="Main_CaseJoint_5_1">
+        <origin xyz="0 0 0" rpy="0 3.14159 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CaseJoint_5_1.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="VioletLight"/>
+      </visual>
+      <visual name="Main_CaseJoint_5_2">
+        <origin xyz="0.00941 0.00049 0.096" rpy="0 3.14159 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CaseJoint_5_2.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="VioletLight"/>
+      </visual>
+      <visual name="Main_CaseOutside_4">
+        <origin xyz="0.02242 0.00045 0.07361" rpy="0 3.14159 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CaseOutside_4.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="GreenLight"/>
+      </visual>
+      <visual name="Main_PK513PA-H50S_v2_1">
+        <origin xyz="-0.00251 0 0.0549" rpy="0 3.14159 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_PK513PA-H50S_v2_1.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Orange"/>
+      </visual>
+      <collision name="Main_CaseJoint_5_1">
+        <origin xyz="0 0 0" rpy="0 3.14159 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CaseJoint_5_1.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+      <collision name="Main_CaseJoint_5_2">
+        <origin xyz="0.00941 0.00049 0.096" rpy="0 3.14159 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CaseJoint_5_2.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+      <inertial name="Main_CaseJoint_5_1">
+        <origin xyz="0 0 0" rpy="0 3.14159 0"/>
+        <mass value="0.911"/>
+        <inertia ixx="0.001327" ixy="0.0" ixz="0.0" iyy="0.001769" iyz="-0.000010" izz="0.001536"/>
+      </inertial>
+      <inertial name="Main_CaseJoint_5_2">
+        <origin xyz="0.00941 0.00049 0.096" rpy="0 3.14159 0"/>
+        <mass value="0.911"/>
+        <inertia ixx="0.001327" ixy="0.0" ixz="0.0" iyy="0.001769" iyz="-0.000010" izz="0.001536"/>
+      </inertial>
+      
+    </link>
+
+    <link name="link5">
+      <visual name="Main_CaseJoint_6">
+        <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CaseJoint_6.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="VioletLight"/>
+      </visual>
+      <visual name="Main_CaseOutside_5">
+        <origin xyz="0.01892 0.00032 0.01025" rpy="0 -1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CaseOutside_5.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="GreenLight"/>
+      </visual>
+      <visual name="Main_PK513PA-H50S_v1">
+        <origin xyz="0.04794 0.00061 -0.0068" rpy="0 -1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_PK513PA-H50S_v1.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Orange"/>
+      </visual>
+      <collision name="Main_CaseJoint_6">
+        <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Main_CaseJoint_6.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+      <inertial name="Main_CaseJoint_6">
+        <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
+        <mass value="0.911"/>
+        <inertia ixx="0.001327" ixy="0.0" ixz="0.0" iyy="0.001769" iyz="-0.000010" izz="0.001536"/>
+      </inertial>
+    </link>
+
+    <link name="link6">
+      <visual name="Gripper">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Gripper.dae" scale="0.25 0.25 0.25"/>
+        </geometry>
+        <material name="Black"/>
+      </visual>
+      <collision name="Gripper">
+        <origin xyz="0 -3e-05 0.01258" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.00621" length="0.0263"/>
+        </geometry>
+      </collision>
+      <inertial name="Gripper">
+        <origin xyz="0 -3e-05 0.01258" rpy="0 0 0"/>
+        <mass value="0.911"/>
+        <inertia ixx="0.001327" ixy="0.0" ixz="0.0" iyy="0.001769" iyz="-0.000010" izz="0.001536"/>
+      </inertial>
+    </link>
+
+    <joint name="joint1" type="revolute">
+      <origin xyz="0 0 0.076" rpy="0 0 0"/>
+      <parent link="base"/>
+      <child link="link1"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-3.14159" upper="3.14159" effort="3.5" velocity="52.35988"/>
+    </joint>
+
+    <joint name="joint2" type="revolute">
+      <origin xyz="-0.0175 0.035 0.035" rpy="1.5708 0 1.5708"/>
+      <parent link="link1"/>
+      <child link="link2"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.29154" effort="0.3" velocity="34.90659"/>
+    </joint>
+
+    <joint name="joint3" type="revolute">
+      <origin xyz="0 0.146 0.03765" rpy="0 3.14159 0"/>
+      <parent link="link2"/>
+      <child link="link3"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-0.73304" upper="1.5708" effort="0.17" velocity="26.17994"/>
+    </joint>
+
+    <joint name="joint4" type="revolute">
+      <origin xyz="0.012 0.052 0.02015" rpy="0 -1.5708 0"/>
+      <parent link="link3"/>
+      <child link="link4"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-3.14159" upper="3.14159" effort="0.4" velocity="2.61799"/>
+    </joint>
+
+    <joint name="joint5" type="revolute">
+      <origin xyz="-0.0068 0 0.127" rpy="0 -1.5708 0"/>
+      <parent link="link4"/>
+      <child link="link5"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.35619" upper="2.35619" effort="0.4" velocity="2.61799"/>
+    </joint>
+
+    <joint name="joint6" type="revolute">
+      <origin xyz="0.07739 0.00077 -0.0068" rpy="0 1.5708 0"/>
+      <parent link="link5"/>
+      <child link="link6"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-3.14159" upper="3.14159" effort="0.4" velocity="78.53982"/>
+    </joint>
+
+    <material name="Black">
+      <color rgba="0 0 0 1.0"/>
+    </material>
+
+    <material name="GreenDark">
+      <color rgba="0.24706 0.42745 0.30588 1.0"/>
+    </material>
+
+    <material name="GreenLight">
+      <color rgba="0.5451 0.83137 0.31372 1.0"/>
+    </material>
+
+    <material name="Orange">
+      <color rgba="0.97647 0.61569 0.32157 1.0"/>
+    </material>
+
+    <material name="VioletDark">
+      <color rgba="0.11372 0.10196 0.18431 1.0"/>
+    </material>
+
+    <material name="VioletLight">
+      <color rgba="0.58824 0.37255 0.83137 1.0"/>
+    </material>
+
+  </robot>
