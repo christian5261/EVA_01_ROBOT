@@ -1,0 +1,401 @@
+<?xml version="1.0"?>
+<!-- created with Phobos 1.0.1 "Capricious Choutengan" -->
+<sdf version="1.5">
+  <model name="R6DOF">
+    <link name="world">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0</mass>
+        <inertia>
+          <ixx>0</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0</iyy>
+          <iyz>0</iyz>
+          <izz>0</izz>
+        </inertia>
+        <pose>0 0 0 0 0 0</pose>
+      </inertial>
+      <collision name="world">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="world">
+        <pose>0 0 0 0 0 0</pose>
+        <material>
+          <ambient>1 0 0 1</ambient>
+          <diffuse>1 0 0 1</diffuse>
+          <specular>0 0 0 1</specular>
+        </material>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.01</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="base">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>1.5</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+        <pose>0 0 0 0 0 0</pose>
+      </inertial>
+      <collision name="Base">
+        <pose>0 0 0 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://R6DOF/meshes/Base.001.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Base">
+        <pose>0.0 0.0 0.0 1.5707963705062866 -0.0 0.0</pose>
+        <material>
+          <ambient>0.58824 0.37255 0.37255 1.0</ambient>
+          <diffuse>0.58824 0.37255 0.83137 1.0</diffuse>
+          <specular>0 0 0 1.0</specular>
+        </material>
+        <geometry>
+          <mesh>
+            <uri>model://R6DOF/meshes/Base.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name="link1">
+      <pose>0 0 0.076 0 0 0</pose>
+      <inertial>
+        <mass>0.141</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+        <pose>0 0 0 0 0 0</pose>
+      </inertial>
+      <collision name="Joint_1">
+        <pose>0 0 0 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://R6DOF/meshes/Joint_1.001.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Joint_1">
+        <pose>0.0 0.0 0.0 1.5707963705062866 -0.0 0.0</pose>
+        <material>
+          <ambient>0.5451 0.83137 0.83137 1.0</ambient>
+          <diffuse>0.5451 0.83137 0.31372 1.0</diffuse>
+          <specular>0 0 0 1.0</specular>
+        </material>
+        <geometry>
+          <mesh>
+            <uri>model://R6DOF/meshes/Joint_1.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name="link2">
+      <pose>-0.0125 0.035 0.111 1.5708 0 1.5708</pose>
+      <inertial>
+        <mass>0.861</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+        <pose>0 0 0 0 0 0</pose>
+      </inertial>
+      <collision name="Joint_2">
+        <pose>0 0 0 0 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://R6DOF/meshes/Joint_2.002.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Joint_2">
+        <pose>0.0 -2.0365085173779107e-09 -9.313225746154785e-10 1.6292069915380125e-07 -1.5707961320877075 0.0</pose>
+        <material>
+          <ambient>0.97647 0.61569 0.61569 1.0</ambient>
+          <diffuse>0.97647 0.61569 0.32157 1.0</diffuse>
+          <specular>0 0 0 1.0</specular>
+        </material>
+        <geometry>
+          <mesh>
+            <uri>model://R6DOF/meshes/Joint_2.001.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name="link3">
+      <pose>0.02015 0.035 0.257 1.5708 0 -1.5708</pose>
+      <inertial>
+        <mass>0.176</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+        <pose>0 0 0 0 0 0</pose>
+      </inertial>
+      <collision name="Joint_3">
+        <pose>0 0 0 0 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://R6DOF/meshes/Joint_3.001.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Joint_3">
+        <pose>0.0 -3.282851990249469e-09 -3.725290298461914e-09 1.6292069915380125e-07 1.5707961320877075 0.0</pose>
+        <material>
+          <ambient>0.58824 0.37255 0.37255 1.0</ambient>
+          <diffuse>0.58824 0.37255 0.83137 1.0</diffuse>
+          <specular>0 0 0 1.0</specular>
+        </material>
+        <geometry>
+          <mesh>
+            <uri>model://R6DOF/meshes/Joint_3.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name="link4">
+      <pose>0 0.023 0.309 1.5708 0 -3.14159</pose>
+      <inertial>
+        <mass>0.175</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+        <pose>0 0 0 0 0 0</pose>
+      </inertial>
+      <collision name="Joint_4">
+        <pose>0 0 0 0 3.14159 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://R6DOF/meshes/Joint_4.001.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Joint_4">
+        <pose>1.8626460374093767e-09 3.747175902901745e-09 0.0 3.2584136988589307e-07 3.141592264175415 5.3086299191176106e-14</pose>
+        <material>
+          <ambient>0.58824 0.37255 0.37255 1.0</ambient>
+          <diffuse>0.58824 0.37255 0.83137 1.0</diffuse>
+          <specular>0 0 0 1.0</specular>
+        </material>
+        <geometry>
+          <mesh>
+            <uri>model://R6DOF/meshes/Joint_4.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name="link5">
+      <pose>0.0068 0.15 0.309 1.5708 0 1.5708</pose>
+      <inertial>
+        <mass>0.077</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+        <pose>0 0 0 0 0 0</pose>
+      </inertial>
+      <collision name="Joint_5">
+        <pose>0 0 0 0 -1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://R6DOF/meshes/Joint_5.001.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Joint_5">
+        <pose>0.0 1.1078618022963838e-09 0.0 1.6292069915380125e-07 -1.5707961320877075 0.0</pose>
+        <material>
+          <ambient>0.11372 0.10196 0.10196 1.0</ambient>
+          <diffuse>0.11372 0.10196 0.18431 1.0</diffuse>
+          <specular>0 0 0 1.0</specular>
+        </material>
+        <geometry>
+          <mesh>
+            <uri>model://R6DOF/meshes/Joint_5.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name="link6">
+      <pose>0 0.225 0.309 1.5708 0 -3.14159</pose>
+      <inertial>
+        <mass>0.004</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+        <pose>0 0 0 0 0 0</pose>
+      </inertial>
+      <collision name="Joint_6">
+        <pose>0 0 0 0 3.14159 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://R6DOF/meshes/Joint_6.001.dae</uri>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Joint_6">
+        <pose>0.0 6.854829592839451e-09 0.0 3.2584136988589307e-07 3.141592264175415 5.3086299191176106e-14</pose>
+        <material>
+          <ambient>0.5451 0.83137 0.83137 1.0</ambient>
+          <diffuse>0.5451 0.83137 0.31372 1.0</diffuse>
+          <specular>0 0 0 1.0</specular>
+        </material>
+        <geometry>
+          <mesh>
+            <uri>model://R6DOF/meshes/Joint_6.dae</uri>
+            <scale>0.25 0.25 0.25</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name="fixed" type="fixed">
+      <parent>world</parent>
+      <child>base</child>
+      <pose>0.0 0.5 0.0 0.0 0.0 0.0</pose>
+      <axis>
+        <xyz>0 0 1.0</xyz>
+      </axis>
+    </joint>
+
+    <joint name="joint1" type="revolute">
+      <parent>base</parent>
+      <child>link1</child>
+      <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <axis>
+        <xyz>0 0 1.0</xyz>
+        <limit>
+          <lower>-3.14159</lower>
+          <upper>3.14159</upper>
+          <effort>3.5</effort>
+          <velocity>52.35988</velocity>
+        </limit>
+      </axis>
+    </joint>
+    <joint name="joint2" type="revolute">
+      <parent>link1</parent>
+      <child>link2</child>
+      <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <axis>
+        <xyz>0 0 1.0</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.29154</upper>
+          <effort>0.3</effort>
+          <velocity>34.90659</velocity>
+        </limit>
+      </axis>
+    </joint>
+    <joint name="joint3" type="revolute">
+      <parent>link2</parent>
+      <child>link3</child>
+      <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <axis>
+        <xyz>0 0 1.0</xyz>
+        <limit>
+          <lower>-0.73304</lower>
+          <upper>1.5708</upper>
+          <effort>0.17</effort>
+          <velocity>26.17994</velocity>
+        </limit>
+      </axis>
+    </joint>
+    <joint name="joint4" type="revolute">
+      <parent>link3</parent>
+      <child>link4</child>
+      <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <axis>
+        <xyz>0 0 1.0</xyz>
+        <limit>
+          <lower>-3.14159</lower>
+          <upper>3.14159</upper>
+          <effort>0.4</effort>
+          <velocity>2.61799</velocity>
+        </limit>
+      </axis>
+    </joint>
+    <joint name="joint5" type="revolute">
+      <parent>link4</parent>
+      <child>link5</child>
+      <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <axis>
+        <xyz>0 0 1.0</xyz>
+        <limit>
+          <lower>-2.35619</lower>
+          <upper>2.35619</upper>
+          <effort>0.4</effort>
+          <velocity>2.61799</velocity>
+        </limit>
+      </axis>
+    </joint>
+    <joint name="joint6" type="revolute">
+      <parent>link5</parent>
+      <child>link6</child>
+      <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <axis>
+        <xyz>0 0 1.0</xyz>
+        <limit>
+          <lower>-3.14159</lower>
+          <upper>3.14159</upper>
+          <effort>0.4</effort>
+          <velocity>78.53982</velocity>
+        </limit>
+      </axis>
+    </joint>
+  </model>
+</sdf>

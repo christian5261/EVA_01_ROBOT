@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<!-- created with Phobos 1.0.1 "Capricious Choutengan" -->
+  <robot name="R6DOF">
+
+    <link name="base">
+      <!--inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="1.5"/>
+        <inertia ixx="0.004" ixy="0.00001" ixz="0.00001" iyy="0.002" iyz="0.00001" izz="0.002"/>
+      </inertial-->
+      <visual name="Base">
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Base.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="PurpleLight"/>
+      </visual>
+      <collision name="Base">
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Base.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="link1">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.409"/>
+        <inertia ixx="0.000331170" ixy="0.000069107" ixz="0.000068367" iyy="0.000305580" iyz="-0.000083033" izz="0.000277064"/>
+      </inertial>
+      <visual name="Joint_1">
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Joint_1.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="GreenLight"/>
+      </visual>
+      <collision name="Joint_1">
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Joint_1.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="link2">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="1.431"/>
+        <inertia ixx="0.012521185" ixy="-0.000170363" ixz="-0.000054839" iyy="0.001107608" iyz="-0.001443751" izz="0.012002504"/>
+      </inertial>
+      <visual name="Joint_2">
+        <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Joint_2.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Orange"/>
+      </visual>
+      <collision name="Joint_2">
+        <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Joint_2.002.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="link3">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.364"/>
+        <inertia ixx="0.000343371" ixy="0.000309313" ixz="-0.000234819" iyy="0.000816314" iyz="0.000119176" izz="0.000876475"/>
+      </inertial>
+      <visual name="Joint_3">
+        <origin xyz="0 0 0" rpy="0 1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Joint_3.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="PurpleLight"/>
+      </visual>
+      <collision name="Joint_3">
+        <origin xyz="0 0 0" rpy="0 1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Joint_3.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="link4">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.306"/>
+        <inertia ixx="0.002165048" ixy="0.000001079" ixz="-0.000004449" iyy="0.002146461" iyz="0.000152053" izz="0.000061851"/>
+      </inertial>
+      <visual name="Joint_4">
+        <origin xyz="0 0 0" rpy="0 3.14159 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Joint_4.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="PurpleLight"/>
+      </visual>
+      <collision name="Joint_4">
+        <origin xyz="0 0 0" rpy="0 3.14159 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Joint_4.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="link5">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.105"/>
+        <inertia ixx="0.000210398" ixy="-0.000000002" ixz="-0.000000002" iyy="0.000010629" iyz="-0.000009835" izz="0.000208610"/>
+      </inertial>
+      <visual name="Joint_5">
+        <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Joint_5.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="PurpleDark"/>
+      </visual>
+      <collision name="Joint_5">
+        <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Joint_5.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="link6">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.008"/>
+        <inertia ixx="0.000000670" ixy="0.0" ixz="0.0" iyy="0.000000670" iyz="0.000000002" izz="0.000000179"/>
+      </inertial>
+      <visual name="Joint_6">
+        <origin xyz="0 0 0" rpy="0 3.14159 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Joint_6.dae" scale="0.25 0.25 0.25"/>
+        </geometry>
+        <material name="GreenLight"/>
+      </visual>
+      <collision name="Joint_6">
+        <origin xyz="0 0 0" rpy="0 3.14159 0"/>
+        <geometry>
+          <mesh filename="package://test_pkg/meshes/dae/Joint_6.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="link1" type="revolute">
+      <origin xyz="0 0 0.076" rpy="0 0 0"/>
+      <parent link="base"/>
+      <child link="link1"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-3.14159" upper="3.14159" effort="3.5" velocity="52.35988"/>
+    </joint>
+
+    <joint name="link2" type="revolute">
+      <origin xyz="-0.0125 0.035 0.035" rpy="1.5708 0 1.5708"/>
+      <parent link="link1"/>
+      <child link="link2"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.29154" effort="0.3" velocity="34.90659"/>
+    </joint>
+
+    <joint name="link3" type="revolute">
+      <origin xyz="0 0.146 0.03265" rpy="0 3.14159 0"/>
+      <parent link="link2"/>
+      <child link="link3"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-0.73304" upper="1.5708" effort="0.17" velocity="26.17994"/>
+    </joint>
+
+    <joint name="link4" type="revolute">
+      <origin xyz="0.012 0.052 0.02015" rpy="0 -1.5708 0"/>
+      <parent link="link3"/>
+      <child link="link4"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-3.14159" upper="3.14159" effort="0.4" velocity="2.61799"/>
+    </joint>
+
+    <joint name="link5" type="revolute">
+      <origin xyz="-0.0068 0 0.127" rpy="0 -1.5708 0"/>
+      <parent link="link4"/>
+      <child link="link5"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.35619" upper="2.35619" effort="0.4" velocity="2.61799"/>
+    </joint>
+
+    <joint name="link6" type="revolute">
+      <origin xyz="0.075 0 -0.0068" rpy="0 1.5708 0"/>
+      <parent link="link5"/>
+      <child link="link6"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-3.14159" upper="3.14159" effort="0.4" velocity="78.53982"/>
+    </joint>
+
+    <material name="GreenLight">
+      <color rgba="0.5451 0.83137 0.31372 1.0"/>
+    </material>
+
+    <material name="Orange">
+      <color rgba="0.97647 0.61569 0.32157 1.0"/>
+    </material>
+
+    <material name="PurpleDark">
+      <color rgba="0.11372 0.10196 0.18431 1.0"/>
+    </material>
+
+    <material name="PurpleLight">
+      <color rgba="0.58824 0.37255 0.83137 1.0"/>
+    </material>
+
+  </robot>
